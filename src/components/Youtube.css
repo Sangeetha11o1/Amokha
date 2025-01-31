@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hoverGrow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.hoverGrow {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hoverGrow:hover {
+    animation: hoverGrow 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    transform: scale(1.05);
+}
