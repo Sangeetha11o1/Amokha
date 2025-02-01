@@ -252,21 +252,21 @@ export default function NavBar() {
         {/* Social Icons (always visible) */}
         <div className="hidden md:flex inline-flex py-0 px-0 my-3">
           <SocialIcon
-            url="https://twitter.com/kapehe_ok"
+            url="https://instagram.com/your_profile"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://youtube.com/c/kapehe"
+            url="https://youtube.com/c/your_profile"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://linkedin.com/in/kapehe_ok"
+            url="https://linkedin.com/in/your_profile"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
