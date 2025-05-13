@@ -43,6 +43,10 @@
 
 }
 
+.profile_pic{
+  border-radius: 100%;
+}
+
 
 .arrow-link{
   position: relative;
@@ -66,6 +70,10 @@ footer{
   background: radial-gradient(ellipse,  rgb(239, 239, 232)200px, rgb(209, 212, 114));
 }
 
+.bg-events{
+  background: radial-gradient(ellipse, rgb(239, 239, 232)200px, rgb(209, 212, 114));
+}
+
 
 main {
   font-size: 100%; /* Base size */
@@ -84,4 +92,49 @@ main {
 }
 
 
+.arrow-link {
+  position: relative;
+  background: none;
+  color: rgb(51, 147, 231);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid rgb(51, 147, 231);
+  padding: 0.2em 0.5em;
+}
+
+.arrow-link::before{
+  content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #e2e491;
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+  .arrow-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #e2e491;
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .arrow-link:hover::before {
+    right: 80%;
+  }
+  .arrow-link:hover::after {
+    left: 80%;
+  }
+  
 

@@ -191,9 +191,9 @@ export default function Home() {
       <h1
         className="
           text-xl sm:text-3xl md:text-5xl 
-          text-black leading-tight lg:leading-snug 
+           leading-tight lg:leading-snug 
         "
-        style={{ fontVariant: "petite-caps", fontFamily: "emoji" }}
+        style={{ fontVariant: "petite-caps", fontFamily: "emoji", color: "darkslategrey" }}
       >
         Amokhatrayi Ayur Wellness
       </h1>
@@ -201,7 +201,7 @@ export default function Home() {
         className="
           mt-4 sm:mt-6 md:mt-8 
            sm:text-xs md:text-xl lg:text-3xl
-          text-black leading-snug 
+           leading-snug 
         "
         style={{ fontVariant: "petite-caps", fontFamily: "emoji" }}
       >

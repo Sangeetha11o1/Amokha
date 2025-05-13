@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ContactUs from "./components/Contact";
 import EventsPage from "./components/EventsPage";
+import SingleEvent from "./components/SingleEvent";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Route Component={Home} path="/" />
         <Route Component={About} path="/about" />
         <Route Component={SinglePost} path="/post/:slug" />
+        <Route Component={SingleEvent} path="/event/:slug" />
         <Route Component={Post} path="/post" />
         <Route Component={Youtube} path="/youtube" />
         <Route Component={ContactUs} path="/contact" />
