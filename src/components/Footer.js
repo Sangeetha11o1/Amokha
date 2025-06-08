@@ -78,40 +78,43 @@
 
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import logo from "./Picture1.png";
+import logo from "./logomain.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-100 py-10">
+    <footer className="bg-green-100 py-0">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
         
-        {/* Left Section */}
-        <div className="text-center md:text-left">
-          <img 
-            src={logo}
-            alt="logo"
-            className="mx-auto md:mx-0 h-20 mb-4"
-          />
-          <h2 className="text-xl font-bold text-orange-500">Amokhatrayi Ayur Wellness</h2>
-          <p className="text-sm text-gray-700 mt-2">© 2024 Amokhatrayi Ayur Wellness. All rights reserved.</p>
-          <p className="text-sm text-gray-700">123 Wellness Lane, Health City, CA 90000</p>
-        </div>
+   {/* Left Section */}
+<div className="flex flex-col items-center md:items-start text-center md:text-left">
+  <img 
+    src={logo}
+    alt="logo"
+    className=" mb-2"
+    style={{marginLeft: "30px", height: "12rem"}}   // slightly bigger
+  />
+  <h2 className="text-xl font-bold text-orange-500">Amokhatrayi Wellness and Coaching Institute</h2>
+  <p className="text-sm text-gray-700 ">© 2024 Amokhatrayi Wellness and Coaching Institute. All rights reserved.</p>
+  <p className="text-sm text-gray-700">123 Wellness Lane, Health City, CA 90000</p>
+</div>
+
+
 
         {/* Center Section */}
         <div className="text-center">
           <h3 className="text-lg font-semibold mb-4 text-gray-700">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/privacy-policy" className="text-sm text-gray-700 hover:text-blue-500 transition-colors duration-200">Privacy Policy</a>
+              <a href="/privacy-policy" className="text-sm text-gray-700 hover:text-blue-100 transition-colors duration-200">Privacy Policy</a>
             </li>
             <li>
-              <a href="/terms-of-service" className="text-sm text-gray-700 hover:text-blue-500 transition-colors duration-200">Terms of Service</a>
+              <a href="/terms-of-service" className="text-sm text-gray-700 hover:text-blue-100 transition-colors duration-200">Terms of Service</a>
             </li>
             <li>
-              <a href="/contact" className="text-sm text-gray-700 hover:text-blue-500 transition-colors duration-200">Contact Us</a>
+              <a href="/contact" className="text-sm text-gray-700 hover:text-blue-100 transition-colors duration-200">Contact Us</a>
             </li>
             <li>
-              <a href="/about" className="text-sm text-gray-700 hover:text-blue-500 transition-colors duration-200">About Us</a>
+              <a href="/about" className="text-sm text-gray-700 hover:text-blue-100 transition-colors duration-200">About Us</a>
             </li>
           </ul>
         </div>
@@ -147,4 +150,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+
 

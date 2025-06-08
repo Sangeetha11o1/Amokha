@@ -195,7 +195,7 @@ export default function Home() {
         "
         style={{ fontVariant: "petite-caps", fontFamily: "emoji", color: "darkslategrey" }}
       >
-        Amokhatrayi Ayur Wellness
+        Amokhatrayi Wellness and Coaching Institute
       </h1>
       <h6
         className="
