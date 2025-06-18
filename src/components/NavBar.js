@@ -498,6 +498,18 @@ export default function NavBar() {
             Youtube
           </NavLink>
           <NavLink
+            to="/services"
+            className="inline-flex items-center px-3 my-6 rounded text-red-100 text-2xl font-bold cursive"
+            activeClassName="text-red-100 bg-red-700"
+            style={{
+              color: hoveredLink === "services" ? "#32CD32" : undefined,
+            }}
+            onMouseEnter={() => handleMouseEnter("services")}
+            onMouseLeave={handleMouseLeave}
+          >
+            Services
+          </NavLink>
+          <NavLink
             to="/event"
             className="inline-flex items-center px-3 my-6 rounded text-red-100 text-2xl font-bold cursive"
             activeClassName="text-red-100 bg-red-700"

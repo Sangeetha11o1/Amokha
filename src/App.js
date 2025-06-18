@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ContactUs from "./components/Contact";
 import EventsPage from "./components/EventsPage";
 import SingleEvent from "./components/SingleEvent";
+import Services from "./components/Services";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route Component={Youtube} path="/youtube" />
         <Route Component={ContactUs} path="/contact" />
         <Route Component={EventsPage} path="/event"/>
+        <Route Component={Services} path="/services"/>
       </Routes>
     <Footer />
     </BrowserRouter>
