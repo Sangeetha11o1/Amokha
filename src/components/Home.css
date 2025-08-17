@@ -26,22 +26,8 @@
     animation: slideUp 2s ease-in-out;
 }
 
-/* .img{
-    padding-top: 100px;
-    object-fit: scale-down;
-    object-position: top;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 8px; Optional: to soften the corners */
-/* } 
-
-.home{
-    background-color: powderblue;
-} 
- */ 
-
  /* General Styling */
 .home {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -49,9 +35,6 @@
 
 /* Left Half Glass Effect */
 .glass-left {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
     width: 50%; /* Covers left half */
     height: 100%;
     backdrop-filter: blur(15px); /* Creates the blur effect */

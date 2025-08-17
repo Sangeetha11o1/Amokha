@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import client from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import logo from "./logomain.png";
+import { FaCheckCircle } from "react-icons/fa";
+
+
 
 const builder = imageUrlBuilder(client);
 function urlFor(source) {
@@ -23,6 +26,7 @@ export default function About() {
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
   }, []);
+  
 
   if (!author)
     return (
@@ -47,9 +51,29 @@ export default function About() {
               Amokhatrayi Wellness and Coaching Institute
             </h1>
             <p className="text-sm md:text-lg leading-relaxed text-gray-700">
-              Amokhatrayi is a budding ayurvedic wellness brand, rooted in the traditional Indian herbal and Vedic wisdom. Founded in 2024 by Dr. Athira Mohan K., we at Amokhatrayi are committed to providing effective ayurvedic healthcare solutions for modern health complaints and guidance to those who seek Ayurveda for their health concerns. 
-              We aim to spread the message of Ayurveda in shaping a way of life tailored to the body's natural makeup and health demands. 
-              Our services include ayurvedic education, training, counselling, ayurvedic product marketing, yoga and meditation classes, cosmetic treatments, and much more — wherever Ayurveda offers better outcomes.
+              
+              <span className="text-red-400 font-bold">— Where Healing Meets Learning —</span> <br/><br/>
+
+Founded by Dr. Athira Mohan K. in 2023, Amokhatrayi Ayur Wellness and Coaching Institute is a unique and holistic Ayurvedic brand that blends authentic patient care, advanced education, and practical skill-building. Rooted in classical Indian wisdom and tailored to today’s global wellness needs, we serve as both a healing center and a hub for professional excellence.<br/><br/>
+
+  <span className="text-red-400 font-bold">Why Choose Amokhatrayi?</span> <br/>
+
+  <ul className="list-none space-y-2 text-gray-700">
+            {[
+              "One-stop destination for Patient Care + Learning + Career Upliftment",
+              "Doctor-led, research-backed and practical approach",
+              "Collaborates with All India BAMS Community",
+              "Affordable, accessible and highly personalized programs",
+              "Blends Ayurveda, Modern Science, Psychology,  Technology & Mores"
+            ].map((item, index) => (
+              <li key={index} className="flex items-center">
+                <FaCheckCircle className="text-blue-500 mr-2" /> {item}
+              </li>
+            ))}
+          </ul><br/>
+
+Whether you're a patient seeking healing, a student seeking knowledge, or a doctor seeking growth,
+Amokhatrayi Ayur Wellness and Coaching Institute is your partner on a journey to wellness, purpose, and empowerment.
             </p>
           </div>
         </section>
